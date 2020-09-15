@@ -14,17 +14,20 @@ public class OddSum {
             ArrayList<Integer> listInt = new ArrayList<>();
             int res;
             if (!test) {
+
                 System.out.println("Elements' list :");
                 for (String v : args)
                     System.out.print(" " + v);
                 System.out.println();
             }
             for (int i = 0; i < args.length; i++) {
+
                 listInt.add(Integer.parseInt(args[i]));
             }
 
             res = sum(listInt);
             if (test) {
+
                 return res;
             }
 
@@ -34,6 +37,7 @@ public class OddSum {
             return 0;
 
         } catch (NumberFormatException nfe) {
+
             System.out.println("Error: only numbers are accepted.");
             return -1;
         }
@@ -44,7 +48,9 @@ public class OddSum {
 
         int result = 0;
         for (int value : listInt) {
+
             if (value % 2 != 0) {
+
                 result += value;
             }
         }
